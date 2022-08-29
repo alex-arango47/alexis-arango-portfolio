@@ -7,4 +7,62 @@
 
 body {
     background-color: rgba(26, 26, 26, 1);
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
 }
+
+.header {
+    width: 100vw;
+    height: 20px;
+    background-color: black;
+}
+
+.navSection {
+    width: 100vw;
+    height: 100px;
+    display: none;
+}
+
+.navSection-Bar {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+.navSection-Bar_Btn {
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+    color: rgba(250,250,250,1);
+    margin: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(0,0,0, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navSection-Bar_Btn:hover {
+    transform: scale(1.015);
+    background-color: rgba(0,0,0, 0.50);
+}
+
+.parallax {
+    background-image: url("/img/bg-alex.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+  }
+
+
+  @media (min-width: 768px) {
+    .navSection {
+        display: block;
+    }
+  }
