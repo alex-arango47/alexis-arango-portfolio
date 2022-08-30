@@ -9,7 +9,7 @@
 
 body {
     background-color: rgba(26, 26, 26, 1);
-    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Rubik', sans-serif;
 }
 
