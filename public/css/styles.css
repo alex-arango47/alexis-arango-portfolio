@@ -135,10 +135,10 @@ main {
 }
 
 .backToTop {
+    display: none;
     position: fixed;
     right: 1%;
     bottom: 2%;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -150,6 +150,7 @@ main {
     width: 40px;
     height: 40px;
     border-radius: 100%;
+    animation: fadeIn 0.5s;
     transition: all 0.3s ease-in-out;
 }
 
@@ -173,6 +174,10 @@ main {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
   
   @media (min-width: 768px) {
     .navSection {
