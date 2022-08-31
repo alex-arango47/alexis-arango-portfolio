@@ -8,11 +8,15 @@
 }
 
 body {
-    min-height: 100%;
     background-color: rgba(26, 26, 26, 1);
     -webkit-tap-highlight-color: transparent;
     font-family: 'Rubik', sans-serif;
-    background-image: url("/img/bg-alex.jpg");
+}
+
+.parallax {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,6 +156,11 @@ main {
     border-radius: 100%;
     animation: fadeIn 0.5s;
     transition: all 0.3s ease-in-out;
+}
+
+.backToTopFdeOut {
+    animation: fadeOut 0.5s;
+    transition: all 0.3s ease-in-out;;
 }
 
 .backToTop a {
