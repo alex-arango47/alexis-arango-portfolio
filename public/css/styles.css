@@ -97,6 +97,7 @@ body {
 .burgerMenu-Main_FadeOut {
     position: absolute;
     background-color: rgba(0, 0, 0, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
     width: 30%;
@@ -108,6 +109,7 @@ body {
 .burgerMenu-Main_Show {
     position: absolute;
     background-color: rgba(0, 0, 0, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
     width: 30%;
@@ -148,10 +150,6 @@ header {
     color: rgba(0,245,102,1);
     box-shadow: 0 10px 40px -10px rgba(0,245,102,1);
     transform: scale(2);
-}
-
-.navSection {
-    display: none;
 }
 
 .navSection-Mobile_Hidden {
@@ -195,6 +193,10 @@ header {
     background-color: rgba(0,0,0, 0.85);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease-in-out;
+}
+
+.navSection {
+    display: none;
 }
 
 .navSection-Bar {
