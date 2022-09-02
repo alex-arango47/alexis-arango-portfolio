@@ -296,7 +296,7 @@ main {
   
   @media (min-width: 768px) {
     .loadPage-Img {
-        width: 65%;
+        width: 50%;
         max-width: 600px;
     }
     .loadPage-Text {
