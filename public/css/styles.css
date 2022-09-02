@@ -15,13 +15,21 @@ body {
 
 .loadPage {
     background-color: rgba(26, 26, 26, 1);
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.loadPage-Text {
+    margin-top: 10px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(250,250,250,0.2);
 }
 
 .loadPage-Img {
@@ -30,19 +38,42 @@ body {
 
 .loadPageFadeOut {
     background-color: rgba(26, 26, 26, 1);
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 1000;
-    animation: fadeOut 1s;
+    width: 100%;
+    height: 100%;
+    animation: fadeOut 1s linear;
 }
 
 .loadPageGhost {
     display: none;
 }
+
+.progress {
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-radius: 100px;
+    padding: 0 5px;
+    height: 10px;
+    width: 200px;
+    margin-top: 40px;
+  }
+  
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px rgba(0,245,102,1);
+    border-radius: 100px;
+    background: rgba(0,245,102,1);
+    height: 5px;
+    width: 0;
+  }
 
 .parallax {
     width: 100%;
@@ -246,6 +277,11 @@ main {
 
 /* Animations */
 
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -262,6 +298,17 @@ main {
     .loadPage-Img {
         width: 65%;
         max-width: 600px;
+    }
+    .loadPage-Text {
+        font-size: 20px;
+    }
+    .progress {
+        height: 20px;
+        width: 500px;
+        margin-top: 40px;
+    }
+    .progress-value {
+        height: 10px;
     }
     .navSection {
         display: flex;
