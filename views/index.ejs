@@ -14,6 +14,7 @@
     <title>FrontEnd Portfolio</title>
 </head>
 <body>
+    <!-- Load Page -->
     <div class="loadPage" id="loadPage">
         <img src="img/logo-alex.png" class="loadPage-Img">
         <div class="progress">
@@ -21,12 +22,28 @@
         </div>
         <p class="loadPage-Text">Loading please wait...</p>
     </div>
+    <!-- Parallax -->
     <div class="parallax">
         <img src="img/logo-alex.png" class="parallax-Img">
-    </div>  
+    </div>
+    <!-- Burger Menu -->
+    <div id="burgerMenu-Main">
+        <div class="navSection-Mobile_Hidden" id="burgerMenu-Main_NavBar">
+            <ul class="navSection-Bar_Mobile">
+                <a href="#" class="navSection-Bar_Btn-Mobile"><li>Home</li></a>
+                <a href="#aboutMe" class="navSection-Bar_Btn-Mobile"><li>About Me</li></a>
+                <a href="#projects" class="navSection-Bar_Btn-Mobile"><li>Projects</li></a>
+                <a href="#contact" class="navSection-Bar_Btn-Mobile"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <!-- Start -->
     <header>
-        <div class="headerMain">
+        <div class="headerMain" class="burgerMenu-Main_Hidden">
             <a href="#"><img src="img/logo-alex.png" alt="" class="headerMain-Logo"></a>
+            <div class="headerMain-Burger" id="headerMain-Burger">
+                <i class="fa-solid fa-bars" id="headerMain-Burger_Btn"></i>
+            </div>
         </div>
     </header>
     <nav>
@@ -74,6 +91,7 @@
         </div>
     </a>
     <script src="js/loadPage.js"></script>
+    <script src="js/burgerMenu.js"></script>
     <script src="js/backToBtn.js"></script>
 </body>
 </html>

@@ -8,5 +8,4 @@ window.onload = (event) => {
             loadPage.classList.add("loadPageGhost");
         }, 1000)
     }, 1000)
-
 };
