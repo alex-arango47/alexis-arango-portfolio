@@ -1,6 +1,7 @@
 const burgerBtn = document.querySelector("#headerMain-Burger");
 const burgerMenu = document.querySelector("#burgerMenu-Main");
 const menuNavBar = document.querySelector("#burgerMenu-Main_NavBar");
+const body = document.querySelector("body");
 
 burgerBtn.addEventListener("click", (event) => {
     event.preventDefault();
@@ -8,6 +9,7 @@ burgerBtn.addEventListener("click", (event) => {
     if(burgerMenu.classList.contains("burgerMenu-Main_Show")){
         burgerMenu.classList.remove("burgerMenu-Main_Show")
         burgerMenu.classList.add("burgerMenu-Main_FadeOut")
+        body.classList.remove("bodyFreeze")
         setTimeout(() => {
             burgerMenu.classList.add("burgerMenu-Main_Hidden")
             burgerMenu.classList.remove("burgerMenu-Main_FadeOut")
@@ -15,6 +17,7 @@ burgerBtn.addEventListener("click", (event) => {
     } else {
         burgerMenu.classList.remove("burgerMenu-Main_Hidden")
         burgerMenu.classList.add("burgerMenu-Main_Show")
+        body.classList.add("bodyFreeze")
     }
     // Nav Bar
      if(menuNavBar.classList.contains("navSection-Mobile_Show")){

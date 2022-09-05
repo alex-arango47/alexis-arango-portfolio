@@ -13,6 +13,10 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+.bodyFreeze {
+    overflow: hidden;
+}
+
 .loadPage {
     background-color: rgba(26, 26, 26, 1);
     display: flex;
@@ -76,12 +80,14 @@ body {
   }
 
 .parallax {
+    position: fixed;
+    background-attachment: fixed;
     width: 100%;
+    min-height: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     z-index: -1000;
 }
 
@@ -100,7 +106,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     height: 100%;
     z-index: 1000;
     animation: fadeOut 0.5s;
@@ -112,7 +118,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
-    width: 30%;
+    width: 40%;
     height: 100%;
     z-index: 1000;
     animation: fadeIn 0.5s;
@@ -179,7 +185,7 @@ header {
 
 .navSection-Bar_Btn-Mobile {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 100%;
@@ -193,6 +199,12 @@ header {
     background-color: rgba(0,0,0, 0.85);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease-in-out;
+}
+
+#navSection-Bar_Btn-Mobile-Icon {
+    color: rgba(250,250,250,1);
+    font-size: 10px;
+    margin-right: 10px;
 }
 
 .navSection {
