@@ -12,6 +12,6 @@ window.onscroll = (event) => {
       setTimeout(() => {
          button.classList.remove("backToTopFadeOut");
          main.classList.add("backToTopGhost");
-      }, 500)
+      }, 450)
    }
 };
