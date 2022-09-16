@@ -79,23 +79,6 @@ body {
     width: 0;
   }
 
-.parallax {
-    position: fixed;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -1000;
-}
-
-.parallax-Img {
-    width: 75%;
-    max-width: 600px;
-}
-
 .burgerMenu-Main_Hidden {
     display: none;
 }

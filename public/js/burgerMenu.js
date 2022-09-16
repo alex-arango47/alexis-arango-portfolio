@@ -34,6 +34,7 @@ burgerBtn.addEventListener("click", (event) => {
     if(menuNavBar.classList.contains("navSection-Mobile_Show")){
         const buttons = document.querySelector("#navSection-Bar_Mobile");
         buttons.addEventListener("click", () => {
+            body.classList.remove("bodyFreeze")
             burgerMenu.classList.remove("burgerMenu-Main_Show")
             burgerMenu.classList.add("burgerMenu-Main_FadeOut")
             menuNavBar.classList.remove("navSection-Mobile_Show")
