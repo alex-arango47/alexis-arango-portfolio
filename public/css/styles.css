@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background-color: rgba(26,26,26,0.8);
     position: fixed;
     overflow: hidden;
@@ -257,6 +256,20 @@ main {
     width: 100%;
 }
 
+.categories-Title {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    font-size: 20px;
+    color: rgba(250,250,250,1);
+}
+
+.categories-Texts {
+    text-align: center;
+    color: rgba(250,250,250,1);
+    font-size: 13px;
+}
+
 .home {
     display: flex;
     justify-content: center;
@@ -299,6 +312,14 @@ main {
     animation: fadeIn 2s
 }
 
+.home-AboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
 .aboutMe {
     display: flex;
     justify-content: center;
@@ -310,10 +331,73 @@ main {
 .aboutMe-Main {
     background-color: rgba(0, 0, 0, 0.85);
     width: 100%;
-    height: 1080px;
+    height: 540px;
     margin: 10px;
     border-radius: 5px;
 }
+
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects-Main {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 1080px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.projects-Main_wip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(250,250,250,1);
+    font-style: italic;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-Main {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 540px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footerMain {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerMain-Logo {
+    width: 50px;
+    user-select: none;
+} 
 
 .backToTop {
     display: flex;
@@ -423,6 +507,12 @@ main {
         display: flex;
         justify-content: center;
     }
+    .categories-Title {
+        font-size: 25px;
+    }
+    .categories-Texts {
+        font-size: 16px;
+    }
     .home {
         width: 90%;
     }
@@ -450,6 +540,21 @@ main {
         width: 90%;
     }
     .aboutMe-Main {
+        margin: 0px 18px 18px 18px;
+    }
+    .projects {
+        width: 90%;
+    }
+    .projects-Main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 18px 18px 18px;
+    }
+    .contact {
+        width: 90%;
+    }
+    .contact-Main {
         margin: 0px 18px 18px 18px;
     }
     .backToTop {
