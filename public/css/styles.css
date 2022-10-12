@@ -114,7 +114,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 35%;
     height: 100%;
     z-index: 1000;
     animation: fadeOut 0.5s;
@@ -126,7 +126,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 35%;
     height: 100%;
     z-index: 1000;
     animation: fadeIn 0.5s;
@@ -289,6 +289,23 @@ main {
 
 .categories-Links::selection {
     color: rgba(0, 0, 0, 1);
+}
+
+.categories-Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.cardTitle {
+    font-size: 16px;
+    padding: 15px;
+    color: rgba(255,255,255,1);
 }
 
 .home {
